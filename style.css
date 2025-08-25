@@ -3,70 +3,77 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: #efd6d2;
+  /* background: #efd6d2;
   background: linear-gradient(
     180deg,
     rgba(239, 214, 210, 1) 0%,
     rgba(255, 140, 198, 1) 100%
   );
-  background-repeat: no-repeat;
+  background-repeat: repeat; */
+
+  background-color: #fde7ff;
+  /* opacity: 0.8; */
+  background-image: linear-gradient(#ffffff 1px, transparent 1px),
+    linear-gradient(to right, #ffffff 1px, #fde7ff 1px);
+  background-size: 20px 20px;
+  text-decoration: #231c07;
 }
 
-ul {
+#navi ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #6f5e76;
+  background-color: #231c07;
   position: sticky;
   top: 0;
   width: 100%;
 }
 
-li {
+#navi li {
   float: right;
 }
 
-li a {
+#navi li a {
   display: block;
-  color: #ffdde2;
+  color: #e0b1cb;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-li a:hover {
+#navi li a:hover {
   background-color: #72ddf7;
 }
 
 h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
-  background-color: white;
+  background-color: #e0b1cb;
   text-align: center;
   margin: 50px;
   padding: 10px;
+  text-decoration: #231c07;
 }
 
 #intro {
   font-family: Georgia, "Times New Roman", Times, serif;
-  background-color: white;
+  background-color: #e0b1cb;
   text-align: center;
   margin: 50px;
   padding: 10px;
+  text-decoration: #231c07;
 }
 
-#buttons {
+#text-box {
   font-family: Georgia, "Times New Roman", Times, serif;
-  background-color: white;
-  text-align: center;
+  background-color: #e0b1cb;
+  text-align: left;
   margin: 50px;
   padding: 10px;
+  text-decoration: #231c07;
 }
 
-/* this is the start of the button css i stole */
-
-/* CSS */
-/* #button.button-10 {
+.button {
   touch-action: manipulation;
   position: relative;
   display: inline-block;
@@ -76,10 +83,7 @@ h1 {
   vertical-align: middle;
   text-decoration: none;
   font-size: inherit;
-  font-family: inherit;
-}
-#button.button-10 {
-  touch-action: manipulation;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 600;
   color: #382b22;
   text-transform: uppercase;
@@ -91,7 +95,8 @@ h1 {
   transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
     background 150ms cubic-bezier(0, 0, 0.58, 1);
 }
-#button.button-10::before {
+
+.button::before {
   position: absolute;
   content: "";
   width: 100%;
@@ -107,21 +112,23 @@ h1 {
   transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
     box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
 }
-#button.button-10:hover {
+
+.button:hover {
   background: #ffe9e9;
   transform: translate(0, 0.25em);
 }
-#button.button-10:hover::before {
+
+.button:hover::before {
   box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
   transform: translate3d(0, 0.5em, -1em);
 }
-#button.button-10:active {
+
+.button:active {
   background: #ffe9e9;
   transform: translate(0em, 0.75em);
 }
-#button.button-10:active::before {
-  box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
-  transform: translate3d(0, 0, -1em); */
-/* } */
 
-/* and this is the end of it i think */
+.button:active::before {
+  box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+  transform: translate3d(0, 0, -1em);
+}
