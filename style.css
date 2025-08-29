@@ -23,8 +23,9 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  border-bottom: 5px dotted #fff0f0;
   overflow: hidden;
-  background-color: #231c07;
+  background-color: #e0b1cb;
   position: sticky;
   top: 0;
   width: 100%;
@@ -36,19 +37,22 @@ body {
 
 #navi li a {
   display: block;
-  color: #e0b1cb;
+  color: #231c07;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 #navi li a:hover {
-  background-color: #72ddf7;
+  background-color: #fff0f0;
 }
 
 h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
   background-color: #e0b1cb;
+  border-style: solid;
+  border-color: #fff0f0;
+  border-width: 10px;
   text-align: center;
   margin: 50px;
   padding: 10px;
@@ -58,6 +62,9 @@ h1 {
 #intro {
   font-family: Georgia, "Times New Roman", Times, serif;
   background-color: #e0b1cb;
+  border-style: solid;
+  border-color: #fff0f0;
+  border-width: 5px;
   text-align: center;
   margin: 50px;
   padding: 10px;
